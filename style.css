@@ -5,6 +5,7 @@ body {
 
 header{
     display: flex;
+    border-bottom: 1px solid black ;
 }
 
 .normal-wrapper {
@@ -12,7 +13,7 @@ header{
     background-color: cadetblue;
     overflow: auto;
     position: relative;
-    /* display: flex; */
+    display: flex;
     margin: 0 auto;
     padding: 15px 40px;
 }
@@ -22,7 +23,8 @@ header{
     justify-content: center;
     position: relative;
     flex: 1 1 0%;
-    border: 0px;
+    height: 30px;
+    margin-left: 50px;
 }
 
 .FormSearch__Button{
@@ -31,13 +33,13 @@ header{
     border: 0px;
     border-radius: 0 10px 10px 0;
     width: 100px;
-    height: 30px;
-    background-color: cornflowerblue;
+    /* height: 30px; */
+    background-color: rgb(78, 133, 235);
     justify-content: center;
     align-items: center;
     font-size: 13px;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     outline: none;
 
 }
@@ -59,10 +61,27 @@ header{
     justify-content: flex-end;
     background-color: cadetblue;
     position: relative;
+    
 }
-.management img{
+
+.user-icon{
      height: 2rem;
-     margin-right: 20px;
+     margin-right: 200px;
  }
- 
+
+.cart-icon{
+    height: 2rem;
+    margin-right: 30px;
+}
+
+.logo{
+    background-color: cadetblue;
+    position: relative;
+}
+.logo img{
+    height: 60px;
+    width: 80px;
+    margin-top: 5px ;
+    margin-left: 150px;
+}
  
