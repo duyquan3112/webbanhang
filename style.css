@@ -76,14 +76,12 @@ header{
 }
 
 .logo{
-    /* background-color: cadetblue; */
     position: relative;
 }
 .logo img{
-    height: 60px;
-    width: 80px;
-    margin-top: 5px ;
+    width: 200px;
     margin-left: 15vw ;
+    margin-top: -10px;
 }
 
 .list-product{
