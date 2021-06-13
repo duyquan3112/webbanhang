@@ -124,3 +124,10 @@ header{
     width: 20px;
     margin-right: 5px;
 }
+
+.list a:hover{
+    background-color: #f89e2e;
+    color: #f1f0f1;
+    border-radius: 10px 0 0 10px;
+    font-size: 14px;
+}
