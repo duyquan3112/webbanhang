@@ -12,27 +12,12 @@ else{
     }
 }
 
-
-function signUpCond(){
-    var uname2 = document.getElementById("addUsername").value;
-    var psword2 = document.getElementById("addPassword").value;
-    var rppsword2 = document.getElementById("addRpPassword").value;
-    var name2 = document.getElementById("addName").value;
-    var phone2 = document.getElementById("addPhone").value;
-    var mail2 = document.getElementById("addMail").value;
-    var addr2 = document.getElementById("addAddress").value;
-
-    if(uname2 != null && psword2 != null && rppsword2 != null &&  name2 != null && phone2 != null && mail2 != null && addr2 != null) {
-        
-        return true;
-    }
-    return false;
-
-
-}
 let userlist = {
     username: "",
-    password: ""
+    password: "",
+    nameofuser: "",
+    email: "",
+    address: ""
 }
 
 let Signup = document.getElementById("signupbutton");
@@ -73,12 +58,30 @@ function islocalStorageExist() {
 
 islocalStorageExist();
 
+
+var uname2 = document.getElementById("addUsername").value;
+var psword2 = document.getElementById("addPassword").value;
+var rppsword2 = document.getElementById("addRpPassword").value;
+var name2 = document.getElementById("addName").value;
+var phone2 = document.getElementById("addPhone").value;
+var mail2 = document.getElementById("addMail").value;
+var addr2 = document.getElementById("addAddress").value;
+function signUpCond(){
+    if(uname2 != null && psword2 != null && rppsword2 != null &&  name2 != null && phone2 != null && mail2 != null && addr2 != null) {
+        return true;
+    }
+    return false;
+}
+
 function signUpEvent(){
     if (signUpCond()==true){
-        Signup.onclick = function () {
-            saveUser(getUserData());
-        }
+        saveUser(getUserData());
+    }
+    else{
+        Signup.disabled = true;
     }
 }
 
-
+Signup.onclick = function (){
+    signUpEvent();
+}
