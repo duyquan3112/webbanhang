@@ -129,7 +129,7 @@ body {
 
 .list-product{
     background-color: white;
-    display: block;
+    display: none;
     padding: 0;
     margin-bottom: 0;
     position: relative;
@@ -137,6 +137,15 @@ body {
     width: 160px;
     margin-left: 5%;
     border-radius: 10px 0 0 10px;
+}
+
+.products-list{
+    width: fit-content;
+    margin-left: 5%;
+}
+
+.products-list:hover .list-product{
+    display: block;
 }
 
 .list{

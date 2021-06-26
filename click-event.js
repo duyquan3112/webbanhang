@@ -10,3 +10,11 @@ window.onclick = function(event) {
         modal2.style.display = "none";
     }
 }
+
+var list = document.getElementById('products-list');
+var list_bar = document.getElementById('list-product');
+ function dropdown (){
+     list_bar.style.display = "none";
+ }
+
+ dropdown();
