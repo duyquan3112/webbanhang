@@ -1,22 +1,23 @@
 
 .banner-top-sale{
-    width: 150px;
-    height: 30px;
-    display: flex;
-    align-items: center;
     padding: 5px;
     border: none;
     border-radius: 5px;
     margin-left: 10px;
-    margin-top: 21px;
+    margin-top: 20px;
     font-weight: 550;
     color: azure;
-    background-color: rgb(255, 180, 89);
+    
 }
 
 .name-banner{
+    border: none;
+    border-radius: 5px;
     width: max-content;
+    padding: 5px;
+    height: 30px;
     margin-left: 1%;
+    background-color: rgb(255, 180, 89);
 }
 
 .banner-top-sale a{
@@ -72,4 +73,8 @@
 .space{
     width: 350px;
     height: 300px;
+}
+
+.contents{
+    padding-left: 10px;
 }
